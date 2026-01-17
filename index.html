@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yogesh Mehare - Single Column Resume</title>
+    <style>
+      /* Base Reset and Layout for Single Page A4 */
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        line-height: 1.2; /* Tightened line height for max space */
+        font-size: 9.5pt; /* Base font size */
+        background: white;
+      }
+
+      .template13_wrapper__dJEA3 {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        background: white;
+        padding: 15pt 20pt; /* Reduced vertical padding */
+        box-sizing: border-box;
+      }
+
+      /* --- Heading Section --- */
+      .headingSection_wrapper__UMdkY {
+        display: flex;
+        justify-content: center; /* Centered for single column aesthetic */
+        padding-bottom: 5pt;
+        border-bottom: 2px solid #007bff;
+        margin-bottom: 10pt;
+        text-align: center;
+      }
+
+      .headingSection_rightPart__GFBBJ {
+        width: 100%; /* Use full width */
+      }
+
+      .headingSection_name__2Jcqb {
+        font-size: 24pt;
+        font-weight: bold;
+        color: #333;
+        margin: 0 0 1pt 0;
+        text-transform: uppercase;
+      }
+
+      .headingSection_jobTitle__8p3bt {
+        font-size: 13pt;
+        color: #007bff;
+        margin: 0 0 5pt 0;
+      }
+
+      .headingSection_infoWrapper__U_jmk {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centered contact details */
+        gap: 15pt; /* Space between items */
+        font-size: 9.5pt;
+      }
+
+      /* --- Single Column Main Content --- */
+      .template13_sidesWrapper__cCk25 {
+        display: block; /* Remove flex to force single column */
+      }
+
+      /* Remove column-specific styling for both sides */
+      .template13_leftSide__kKIB_,
+      .template13_rightSide__2Gehd {
+        width: 100%;
+        padding: 0;
+        border: none;
+      }
+
+      /* --- General Section Styling (H3 Headings) --- */
+      h3 {
+        font-size: 11pt;
+        color: #007bff;
+        border-bottom: 1.5px solid #007bff; /* Slight border reduction */
+        padding-bottom: 1pt;
+        margin-top: 10pt; /* Reduced top margin */
+        margin-bottom: 5pt; /* Reduced bottom margin */
+        text-transform: uppercase;
+      }
+
+      /* --- Summary, Experience, Education styles (main content) --- */
+      .summarySection_text__adDme ul,
+      .workSection_listWrapper__EKMpm ul {
+        padding-left: 15px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .summarySection_text__adDme li,
+      .workSection_listWrapper__EKMpm li {
+        list-style-type: disc;
+        margin-bottom: 2pt; /* Very small margin */
+        line-height: 1.3;
+      }
+      .summarySection_text__adDme {
+        margin-bottom: 8pt; /* Reduced bottom margin */
+      }
+
+      /* Experience Details */
+      .workSection_listItem__0IFz8 {
+        list-style: none;
+        margin-bottom: 8pt; /* Reduced margin */
+        padding: 0;
+      }
+
+      .workSection_jobTitle__XTuTV {
+        font-weight: bold;
+        font-size: 10pt;
+        color: #333;
+        margin-bottom: 1pt;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .workSection_date__HDByT {
+        font-weight: normal;
+        font-style: italic;
+        color: #555;
+        font-size: 9pt; /* Smaller date font */
+      }
+
+      .workSection_employer__3MYPW {
+        font-style: italic;
+        margin-bottom: 2pt;
+        color: #555;
+        font-size: 9pt;
+      }
+
+      /* Education Details */
+      .educationSection_listItem__TmMPb {
+        list-style: none;
+        margin-bottom: 8pt;
+      }
+      .educationSection_schoolTitle__suvcI {
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        font-size: 10pt;
+        margin-bottom: 1pt;
+      }
+      .educationSection_schoolLocation__Xebv4 {
+        font-style: italic;
+        margin-bottom: 1pt;
+        color: #555;
+        font-size: 9pt;
+      }
+      .educationSection_listWrapper___8oYF p {
+        margin: 0;
+      }
+
+      /* --- Skills (Inline Block) --- */
+      .skillsSection_list__ZeS13 {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 0pt 0;
+        display: flex; /* Kept flex for tag-style display */
+        flex-wrap: wrap;
+        gap: 4pt;
+      }
+
+      .skillsSection_item__2vP_H {
+        background-color: #f4f4f4;
+        padding: 0pt 10pt;
+        border-radius: 3px;
+        font-size: 8pt; /* Smallest font size */
+        white-space: nowrap;
+      }
+
+      /* --- Links, Languages, Certs (Condensed) --- */
+      .linksSection_list__Ueywj,
+      .languagesSection_list__mfezM,
+      .achievementSection_list__lBfn9,
+      .certificationSection_list__FtE17 {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 10pt;
+      }
+
+      /* Link details formatted inline */
+      .linksSection_item__sepOc {
+        display: block; /* Ensures links take up full width */
+        margin-bottom: 3pt;
+        font-size: 9pt;
+      }
+      .linksSection_text__orbd8 {
+        display: inline;
+        font-weight: bold;
+      }
+      .linksSection_url__ZSaKM {
+        display: inline;
+        font-weight: normal;
+        word-break: break-all;
+        color: #007bff;
+        text-decoration: none;
+        margin-left: 5px;
+      }
+
+      /* Language items (Simplified) */
+      .languagesSection_item__U2Px4 {
+        margin-bottom: 2pt;
+        font-size: 9pt;
+      }
+
+      /* Achievements/References/Certifications Text */
+      .achievementSection_text__2Y3R3 p,
+      .certificationSection_text__1JVMO p,
+      .reference_text__CMELc {
+        margin: 0 0 2pt 0;
+        font-size: 9.5pt;
+      }
+
+      .side_by_side_container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20pt; /* Space between the two columns */
+        margin-top: 10pt; /* Separates it from the section above it */
+      }
+
+      .side_by_side_container > div {
+        flex: 1; /* Makes both columns take up equal width */
+      }
+
+      /* General Section Styling (H3 Headings) - Standard Resume Styles */
+      h3 {
+        font-size: 11pt;
+        color: #007bff;
+        border-bottom: 1.5px solid #007bff;
+        padding-bottom: 1pt;
+        margin-top: 0; /* Remove top margin here to prevent excessive spacing */
+        margin-bottom: 5pt;
+        text-transform: uppercase;
+      }
+
+      /* Education Styles */
+      .educationSection_listItem__TmMPb {
+        list-style: none;
+        margin-bottom: 8pt;
+        padding: 0;
+      }
+      .educationSection_schoolTitle__suvcI {
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        font-size: 10pt;
+        margin-bottom: 1pt;
+      }
+      .educationSection_schoolLocation__Xebv4 {
+        font-style: italic;
+        margin-bottom: 1pt;
+        color: #555;
+        font-size: 9pt;
+      }
+
+      /* Links Styles */
+      .linksSection_list__Ueywj {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+      }
+      .linksSection_item__sepOc {
+        margin-bottom: 3pt;
+        font-size: 9pt;
+        word-break: break-all;
+      }
+      .linksSection_text__orbd8 {
+        font-weight: bold;
+        display: inline;
+      }
+      .linksSection_url__ZSaKM {
+        display: inline;
+        font-weight: normal;
+        color: #007bff;
+        text-decoration: none;
+        margin-left: 5px;
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="template13_wrapper__dJEA3 template13_withPlaceholders__qvjNO">
+      <div class="headingSection_wrapper__UMdkY">
+        <div class="headingSection_rightPart__GFBBJ">
+          <p class="headingSection_name__2Jcqb">Yogesh Mehare</p>
+          <p class="headingSection_jobTitle__8p3bt">
+            Android Developer &amp; Software Engineer
+          </p>
+          <div class="headingSection_infoWrapper__U_jmk">
+            <div class="headingSection_location__IoZX3">Hyderabad, India</div>
+            <div class="headingSection_email__yEbqB">
+              yogeshmehare124@gmail.com
+            </div>
+            <div class="headingSection_phone__EnMVt">7507893949</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="template13_sidesWrapper__cCk25">
+        <div class="template13_rightSide__2Gehd">
+          <div>
+            <div class="summarySection_summaryWrapper__woQRp">
+              <h3 class="summarySection_title__mL1sa">Summary</h3>
+              <div class="summarySection_text__adDme">
+                <ul>
+                  <li>
+                    I am a self-motivated person and fond of learning new
+                    technologies. My aim is to gain knowledge and utilize it by
+                    working on projects which will enhance my skills and
+                    contribute positively towards my organizations growth. As a
+                    passionate Android Developer and Software Engineer, I am
+                    eager to bring my expertise in mobile application
+                    development to your innovative team. With a strong
+                    foundation in coding, problem-solving, and collaboration, I
+                    am excited about the opportunity to contribute to
+                    cutting-edge projects that enhance user experiences. I am
+                    committed to continuous learning and growth, and I look
+                    forward to making a meaningful impact at your organization.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="workSection_wrapper__LXF65">
+              <h3 class="workSection_title__zqq2F">Experience</h3>
+              <ul>
+                <li class="workSection_listItem__0IFz8">
+                  <div class="workSection_jobTitle__XTuTV">
+                    Android Developer
+                    <span class="workSection_date__HDByT"
+                      >Oct 2022 — Jul 2025</span
+                    >
+                  </div>
+                  <p
+                    class="workSection_text__mvd0C workSection_employer__3MYPW"
+                  >
+                    YuppTV - Hyderabad
+                  </p>
+                  <div class="workSection_listWrapper__EKMpm">
+                    <ul>
+                      <li>
+                        Contributed to the development of the YuppTV app (mobile
+                        and TV), a live OTT platform on the Play Store with an
+                        active user base of over 1.2 million.
+                      </li>
+                      <li>
+                        Developed application for news reporters and end users.
+                      </li>
+                      <li>
+                        Followed google guidelines recommended architecture like
+                        MVVM &amp; Clean Architecture.
+                      </li>
+                      <li>
+                        Leveraged Kotlin and Jetpack libraries for 2.5 years, utilizing Room Database, Preference DataStore, LiveData, Jetpack Compose, Navigation Component, Retrofit, and Hilt for dependency injection to build Android apps in this project.
+                      </li>
+                      <li>
+                        Incorporated Coroutines for asynchronous processing and
+                        Glide for efficient image loading.
+                      </li>
+                      <li>
+                        Integrated Crashlytics for crash reporting, CleverTap
+                        for event tracking and push notifications, and RESTful
+                        APIs for data operations.
+                      </li>
+                      <li>
+                        Used Github &amp; Gitlab as VCS, and Jira as ticketing
+                        tool.
+                      </li>
+                      <li>
+                        Collaborated with cross-functional teams to deliver
+                        projects on time, maintaining code quality through
+                        rigorous testing and code reviews.
+                      </li>
+                      <li>
+                        Optimized app performance, reducing load times for
+                        better UX.
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="workSection_listItem__0IFz8">
+                  <div class="workSection_jobTitle__XTuTV">
+                    Software Engineer
+                    <span class="workSection_date__HDByT"
+                      >Aug 2020 — Sep 2022</span
+                    >
+                  </div>
+                  <p
+                    class="workSection_text__mvd0C workSection_employer__3MYPW"
+                  >
+                    TCS - Nagpur
+                  </p>
+                  <div class="workSection_listWrapper__EKMpm">
+                    <ul>
+                      <li>
+                        Implemented native Android apps from scratch in Java and
+                        Kotlin for AOSP Nissan Project, including Notes App,
+                        Media player with Exoplayer Lib, and Settings App.
+                      </li>
+                      <li>
+                        Utilized Jetpack libraries with MVVM architecture, Room,
+                        Data store, Live data, Navigation Lib, Rest APIs with
+                        Retrofit, Shared Preferences, and Glide.
+                      </li>
+                      <li>Used React in frontend for an internal project.</li>
+                      <li>
+                        Created Python scripts to fast-track app setup time
+                        which reduced app creation time by 90%.
+                      </li>
+                      <li>
+                        Worked with SVN and Git to manage code repositories and
+                        track changes.
+                      </li>
+                      <li>
+                        Written Tests using Junit &amp; Espresso &amp;
+                        Screenshot testing.
+                      </li>
+                      <li>
+                        Created comprehensive documents required in the sprint
+                        delivery process.
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div class="skillsSection_wrapper__ymaGI">
+              <h3 class="skillsSection_title__lgYh_">Technical Skills with Exp</h3>
+              <ul class="skillsSection_list__ZeS13">
+                <li class="skillsSection_item__2vP_H">
+                  <div>
+                    <p class="skillsSection_text__6Vt7_">Android (4.5 yrs)</p>
+                  </div>
+                </li>
+                <li class="skillsSection_item__2vP_H">
+                  <div><p class="skillsSection_text__6Vt7_">Kotlin (4)</p></div>
+                </li>
+                <li class="skillsSection_item__2vP_H">
+                  <div><p class="skillsSection_text__6Vt7_">Java (2)</p></div>
+                </li>
+                <li class="skillsSection_item__2vP_H">
+                  <div>
+                    <p class="skillsSection_text__6Vt7_">Jetpack (4)</p>
+                  </div>
+                </li>
+                <li class="skillsSection_item__2vP_H">
+                  <div>
+                    <p class="skillsSection_text__6Vt7_">
+                      MVVM &amp; Clean Arch (4)
+                    </p>
+                  </div>
+                </li>
+                <li class="skillsSection_item__2vP_H">
+                  <div>
+                    <p class="skillsSection_text__6Vt7_">Android SDK (4)</p>
+                  </div>
+                </li>
+                <li class="skillsSection_item__2vP_H">
+                  <div>
+                    <p class="skillsSection_text__6Vt7_">Android TV (2)</p>
+                  </div>
+                </li>
+                <li class="skillsSection_item__2vP_H">
+                  <div><p class="skillsSection_text__6Vt7_">OTT (2.5)</p></div>
+                </li>
+                <li class="skillsSection_item__2vP_H">
+                  <div>
+                    <p class="skillsSection_text__6Vt7_">Git, Github, Gitlab  (4)</p>
+                  </div>
+                </li>
+                <li class="skillsSection_item__2vP_H">
+                  <div>
+                    <p class="skillsSection_text__6Vt7_">
+                      Jira, Github Actions (2)
+                    </p>
+                  </div>
+                </li>
+                <li class="skillsSection_item__2vP_H">
+                  <div>
+                    <p class="skillsSection_text__6Vt7_">
+                      Firebase &amp; AWS S3 (1)
+                    </p>
+                  </div>
+                </li>
+                <li class="skillsSection_item__2vP_H">
+                  <div>
+                    <p class="skillsSection_text__6Vt7_">
+                      HTML, CSS, JS, React &amp; C# (0.5 yrs)
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="side_by_side_container">
+            <div>
+              <div class="educationSection_wrapper__zLLy3">
+                <h3 class="educationSection_title__8j6jU">Education</h3>
+                <li class="educationSection_listItem__TmMPb">
+                  <div class="educationSection_schoolTitle__suvcI">
+                    <span>BE in Computer Technology</span>
+                    <span>2016 — 2020</span>
+                  </div>
+                  <div class="educationSection_schoolTitle__suvcI">
+                    <span>RTMNU (Nagpur University)</span>
+                  </div>
+                  <p class="educationSection_schoolLocation__Xebv4">
+                    <span>Nagpur, MH | 8.57 CGPA</span>
+                  </p>
+                </li>
+              </div>
+            </div>
+
+            <div>
+              <div class="linksSection_wrapper__Q3da2">
+                <h3 class="linksSection_title__Haxvi">Websites and Links</h3>
+                <ul class="linksSection_list__Ueywj">
+                  <li class="linksSection_item__sepOc">
+                    <p class="linksSection_text__orbd8">Profile Site:</p>
+                    <a
+                      class="linksSection_url__ZSaKM"
+                      href="https://yogeshmehare.netlify.app/"
+                      >yogeshmehare.netlify.app/</a
+                    >
+                  </li>
+                  <li class="linksSection_item__sepOc">
+                    <p class="linksSection_text__orbd8">LinkedIn:</p>
+                    <a
+                      class="linksSection_url__ZSaKM"
+                      href="https://linkedin.com/in/yogesh-mehare-36724b111"
+                      >linkedin.com/in/yogesh-mehare-36724b111</a
+                    >
+                  </li>
+                  <li class="linksSection_item__sepOc">
+                    <p class="linksSection_text__orbd8">GitHub:</p>
+                    <a
+                      class="linksSection_url__ZSaKM"
+                      href="https://github.com/yogeshmehare"
+                      >github.com/yogeshmehare</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="achievementSection_title__XZbz3">
+              Additional Information
+            </h3>
+
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                gap: 20pt;
+                margin-bottom: 5pt;
+              "
+            >
+              <div style="flex: 1 1 30%">
+                <h4 style="font-size: 10pt; margin: 0 0 3pt 0; color: #333">
+                  ACHIEVEMENTS
+                </h4>
+                <ul
+                  class="achievementSection_list__lBfn9"
+                  style="margin-top: 0"
+                >
+                  <div class="achievementSection_text__2Y3R3">
+                    <p>
+                      Star of the month (Automotive Champions of Automotive
+                      Realm) (04/2021)
+                    </p>
+                  </div>
+                </ul>
+              </div>
+
+              <div style="flex: 1 1 30%">
+                <h4 style="font-size: 10pt; margin: 0 0 3pt 0; color: #333">
+                  CERTIFICATIONS
+                </h4>
+                <ul
+                  class="certificationSection_list__FtE17"
+                  style="margin-top: 0"
+                >
+                  <div class="certificationSection_text__1JVMO">
+                    <p>
+                      <a
+                        href="https://drive.google.com/drive/folders/1msfyf3Z4qDmpucAk3kCCCWfbdqI4_R6F"
+                        class="linksSection_url__ZSaKM"
+                        style="display: inline"
+                      >
+                        <p class="material-icons" style="margin-top: px">
+                          link
+                        </p>
+                        Certificates
+                      </a>
+                    </p>
+                  </div>
+                </ul>
+              </div>
+
+              <div style="flex: 1 1 30%">
+                <h4 style="font-size: 10pt; margin: 0 0 3pt 0; color: #333">
+                  LANGUAGES
+                </h4>
+                <ul class="languagesSection_list__mfezM" style="margin-top: 0">
+                  <li class="languagesSection_item__U2Px4">English</li>
+                  <li class="languagesSection_item__U2Px4">Hindi</li>
+                  <li class="languagesSection_item__U2Px4">Marathi</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
