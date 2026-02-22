@@ -1,76 +1,143 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SweetSwan — Privacy Policy</title>
-  <style>
-    body { font-family: system-ui, -apple-system, Roboto, "Helvetica Neue", Arial; color: #222; background: #fff; line-height:1.6; padding:24px; }
-    h1,h2,h3{ color:#c91e57 }
-    pre { background:#f5f5f5; padding:12px; }
-    a{ color:#c91e57 }
-    .muted{ color:#666 }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetSwan – Privacy Policy</title>
+    <style>
+        :root { --accent: #FF6B9D; --bg: #fafafa; --text: #222; --muted: #666; --border: #e0e0e0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+        .container { max-width: 800px; margin: 0 auto; padding: 32px 20px 64px; }
+        h1 { font-size: 2rem; margin-bottom: 4px; color: var(--accent); }
+        h2 { font-size: 1.35rem; margin-top: 36px; margin-bottom: 12px; color: var(--text); border-bottom: 2px solid var(--accent); padding-bottom: 4px; }
+        h3 { font-size: 1.1rem; margin-top: 20px; margin-bottom: 8px; }
+        p, li { margin-bottom: 10px; color: var(--text); }
+        ul { padding-left: 24px; }
+        .effective { color: var(--muted); font-size: 0.95rem; margin-bottom: 24px; }
+        .highlight { background: #fff0f5; border-left: 4px solid var(--accent); padding: 12px 16px; margin: 16px 0; border-radius: 0 8px 8px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+        th, td { text-align: left; padding: 10px 12px; border: 1px solid var(--border); }
+        th { background: #fff0f5; font-weight: 600; }
+        a { color: var(--accent); }
+        @media (prefers-color-scheme: dark) {
+            :root { --bg: #181818; --text: #e0e0e0; --muted: #999; --border: #333; }
+            .highlight { background: #2a1a22; }
+            th { background: #2a1a22; }
+        }
+    </style>
 </head>
 <body>
-  <h1>Privacy Policy — SweetSwan</h1>
-  <p class="muted">Last updated: 2026-01-17</p>
+<div class="container">
 
-  <p>Welcome to SweetSwan ("we", "our", "us"). We respect your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, disclose and keep your information when you use the SweetSwan mobile application (the "App") and related services.</p>
+<h1>Privacy Policy</h1>
+<p class="effective">Effective Date: February 22, 2026 &nbsp;|&nbsp; Last Updated: February 22, 2026</p>
 
-  <h2>1. Information We Collect</h2>
-  <h3>1.1 Information You Provide</h3>
-  <ul>
-    <li>Account information: name, email address, phone number (if provided), profile photos, age, gender and bio.</li>
-    <li>Profile content: photos, interests, location preferences and other profile fields you add.</li>
-    <li>Messages: text and media you send to other users in-app.</li>
-  </ul>
+<p>SweetSwan ("we", "our", or "us") operates the SweetSwan mobile application (the "App"). This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you use our App. By using SweetSwan you agree to the practices described below.</p>
 
-  <h3>1.2 Automatically Collected Information</h3>
-  <ul>
-    <li>Usage information: pages/screens visited, features used and interaction patterns to help improve the App.</li>
-    <li>Device & diagnostic information: device model, OS version, crash logs and performance metrics.</li>
-    <li>Location data: if you grant location access we may collect approximate location to show nearby profiles and calculate distances.</li>
-  </ul>
+<h2>1. Information We Collect</h2>
 
-  <h2>2. How We Use Your Information</h2>
-  <ul>
-    <li>To provide and maintain the App, including profile discovery, messaging, matching and notifications.</li>
-    <li>To personalize your experience and show more relevant profiles.</li>
-    <li>For analytics, debugging and improving our service.</li>
-    <li>To send transactional communications related to your account (e.g., password resets, critical notices).</li>
-  </ul>
+<h3>1.1 Information You Provide</h3>
+<table>
+<tr><th>Data</th><th>When / Why</th></tr>
+<tr><td><strong>Account credentials</strong> – email address, password (hashed on server)</td><td>Registration &amp; login</td></tr>
+<tr><td><strong>Profile information</strong> – name, age, gender, bio, interests, education, occupation, languages, lifestyle preferences</td><td>Onboarding &amp; profile editing</td></tr>
+<tr><td><strong>Photographs</strong> – profile photos uploaded from your camera or photo library</td><td>Profile creation &amp; editing</td></tr>
+<tr><td><strong>Face verification selfie</strong> – a live selfie compared against your uploaded photos using on-device ML Kit face detection</td><td>Optional identity verification</td></tr>
+<tr><td><strong>Chat messages</strong> – text messages exchanged with matched users</td><td>In-app messaging</td></tr>
+<tr><td><strong>Payment information</strong> – processed exclusively by Razorpay; we receive only transaction ID, order ID, plan selected, and amount paid</td><td>Premium subscription purchases</td></tr>
+</table>
 
-  <h2>3. Sharing & Disclosure</h2>
-  <p>We do not sell your personal information. We may share information with:</p>
-  <ul>
-    <li>Other users: limited profile information (name, age, photos, gender, location proximity) is visible to other users according to app features and your settings.</li>
-    <li>Service providers: hosting, analytics, push notifications and other third-party services that help operate the App.</li>
-    <li>Legal requests: when required by law or to protect rights, safety or property.</li>
-  </ul>
+<h3>1.2 Information Collected Automatically</h3>
+<table>
+<tr><th>Data</th><th>When / Why</th></tr>
+<tr><td><strong>Device location</strong> – GPS coordinates (latitude &amp; longitude) via ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION</td><td>Finding nearby matches; only approximate distance is shown to other users</td></tr>
+<tr><td><strong>Push notification token</strong> – Firebase Cloud Messaging (FCM) device token</td><td>Delivering real-time notifications for matches, messages, likes</td></tr>
+<tr><td><strong>Device &amp; usage data</strong> – device type, OS version, app version, crash logs</td><td>Diagnostics &amp; improving app stability</td></tr>
+</table>
 
-  <h2>4. Push Notifications</h2>
-  <p>We may use push notifications (FCM or platform push) to notify you about likes, matches and messages. You can manage notification preferences in the app settings or via your device settings.</p>
+<h3>1.3 Permissions We Request</h3>
+<div class="highlight">
+<ul>
+<li><strong>Camera</strong> – To take profile photos and face-verification selfies.</li>
+<li><strong>Photo Library / Storage</strong> – To select existing photos for your profile.</li>
+<li><strong>Location (Fine &amp; Coarse)</strong> – To show you nearby users and calculate approximate distance.</li>
+<li><strong>Push Notifications</strong> – To alert you about new matches, messages, likes, and super likes.</li>
+<li><strong>Internet &amp; Network State</strong> – Required for all server communication.</li>
+</ul>
+<p>Every permission is requested at runtime. You can deny or revoke any permission in your device settings at any time; however, some features may not work without them.</p>
+</div>
 
-  <h2>5. Data Retention</h2>
-  <p>We retain personal information for as long as needed to provide the service, fulfill legal obligations, resolve disputes or enforce our agreements.</p>
+<h2>2. How We Use Your Information</h2>
+<ul>
+<li><strong>Provide the Service</strong> – Display your profile to potential matches, enable swiping, liking, super-liking, matching, and chatting.</li>
+<li><strong>Location-based matching</strong> – Show you users within your preferred distance and show your approximate location to others.</li>
+<li><strong>Face verification</strong> – Compare your selfie against your uploaded photos to award a "Verified" badge. Face comparison is performed on our secure server; we do not store the raw selfie after comparison.</li>
+<li><strong>Payments</strong> – Process premium subscription purchases via Razorpay. We store your plan ID, subscription tier, expiry date, and amount paid — <strong>never</strong> your card or bank details.</li>
+<li><strong>Notifications</strong> – Send you push notifications about new matches, messages, likes, profile views, and super likes.</li>
+<li><strong>Safety &amp; moderation</strong> – Detect abuse, enforce blocks, and maintain community standards.</li>
+<li><strong>Improve the App</strong> – Analyse aggregated, non-identifying usage patterns to fix bugs and develop features.</li>
+</ul>
 
-  <h2>6. Third‑Party Links</h2>
-  <p>The App may include links to third-party websites or services. We are not responsible for the privacy practices of those third parties.</p>
+<h2>3. How We Share Your Information</h2>
+<ul>
+<li><strong>Other Users</strong> – Your profile information (name, age, gender, photos, bio, interests, approximate location, verification status) is visible to other SweetSwan users. Your exact GPS coordinates are <strong>never</strong> shared; only approximate distance is displayed.</li>
+<li><strong>Razorpay</strong> – Payment data is transmitted directly to Razorpay for processing. Razorpay's privacy policy governs the handling of your payment information: <a href="https://razorpay.com/privacy/" target="_blank">https://razorpay.com/privacy/</a></li>
+<li><strong>Firebase / Google</strong> – FCM tokens for push notifications and crash analytics. Governed by Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+<li><strong>Law enforcement</strong> – We may disclose information if required by law, legal process, or to protect the rights and safety of our users.</li>
+</ul>
+<p>We do <strong>not</strong> sell your personal data to third parties.</p>
 
-  <h2>7. Security</h2>
-  <p>We take reasonable technical and organizational measures to protect information but cannot guarantee absolute security. Please secure your device and account credentials.</p>
+<h2>4. Data Storage &amp; Security</h2>
+<ul>
+<li>Account data is stored on our secure servers (AWS DynamoDB) with encrypted connections (HTTPS/TLS).</li>
+<li>Passwords are hashed on the server using industry-standard algorithms and are <strong>never</strong> stored in plain text.</li>
+<li>Local data (profile cache, preferences) is stored in Android SharedPreferences on your device.</li>
+<li>Chat messages are transmitted over WebSocket (WSS) and stored server-side.</li>
+<li>Photos are stored on our cloud storage with access-controlled URLs.</li>
+</ul>
 
-  <h2>8. Children</h2>
-  <p>The App is not intended for users under 16. We do not knowingly collect personal information from children under 16.</p>
+<h2>5. Data Retention</h2>
+<ul>
+<li><strong>Active accounts</strong> – Data is retained as long as your account is active.</li>
+<li><strong>Deleted accounts</strong> – When you delete your account (Settings → Delete Account), all personal data — profile, photos, matches, conversations, likes — is permanently removed from our servers within 30 days.</li>
+<li><strong>Face verification selfies</strong> – Selfies are used only for the one-time comparison and are not permanently stored.</li>
+<li><strong>Chat messages</strong> – Retained while both participants have active accounts. Messages are deleted when either party deletes their account.</li>
+</ul>
 
-  <h2>9. Your Rights</h2>
-  <p>You may request access, correction, or deletion of your account information. To exercise these rights, please contact us at <a href="mailto:privacy@sweetswan.example">privacy@sweetswan.example</a> (replace with your real support email).</p>
+<h2>6. Your Rights &amp; Choices</h2>
+<ul>
+<li><strong>Access &amp; edit</strong> – View and update your profile data at any time via Settings → Edit Profile.</li>
+<li><strong>Delete account</strong> – Permanently delete all your data via Settings → Delete Account.</li>
+<li><strong>Revoke permissions</strong> – Manage camera, location, notification, and storage permissions in your device settings.</li>
+<li><strong>Block users</strong> – Block any user to prevent them from seeing your profile or contacting you.</li>
+<li><strong>Incognito mode</strong> – Platinum subscribers can browse in incognito mode, hiding their profile from non-matched users.</li>
+<li><strong>Opt out of notifications</strong> – Disable push notifications via Settings → Notifications or your device settings.</li>
+</ul>
 
-  <h2>10. Changes to This Policy</h2>
-  <p>We may update this policy occasionally. We will post the updated policy here with a revised "Last updated" date.</p>
+<h2>7. Children's Privacy</h2>
+<p>SweetSwan is intended for users aged <strong>18 and older</strong>. We do not knowingly collect personal information from anyone under 18. If we learn that we have collected data from a minor, we will promptly delete it.</p>
 
-  <hr />
-  <p class="muted">SweetSwan — Built from the SweetSwan project. For questions about this policy contact <a href="mailto:privacy@sweetswan.example">privacy@sweetswan.example</a>.</p>
+<h2>8. Third-Party Services</h2>
+<table>
+<tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
+<tr><td>Firebase Cloud Messaging</td><td>Push notifications</td><td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td></tr>
+<tr><td>Firebase ML Kit</td><td>On-device face detection</td><td>Same as above</td></tr>
+<tr><td>Razorpay</td><td>Payment processing</td><td><a href="https://razorpay.com/privacy/" target="_blank">razorpay.com/privacy</a></td></tr>
+<tr><td>Google Play Services</td><td>Location services</td><td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td></tr>
+</table>
+
+<h2>9. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date. Continued use of the App after changes constitutes acceptance of the revised policy.</p>
+
+<h2>10. Contact Us</h2>
+<p>If you have questions or concerns about this Privacy Policy or your data, please contact us:</p>
+<ul>
+<li><strong>Email:</strong> <a href="mailto:support@sweetswan.space">support@sweetswan.space</a></li>
+<li><strong>Website:</strong> <a href="https://sweetswan.space">https://sweetswan.space</a></li>
+</ul>
+
+</div>
 </body>
 </html>
+
